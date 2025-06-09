@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Video</title>
+    <style>
+        .menu-icon {
+            margin-top: 10px;
+            width: 35px;
+            height: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .menu-icon span {
+            height: 4px;
+            background-color: #333;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <audio controls
+    style="border: 2px solid; border-radius: 10px;"  
+    src="assets/Media/audio1.mp3"> <!--Without controls nothing shows up on website of audio file-->
+    </audio>
+    <video controls
+    style="width: 600px;display: block; margin: 10px 0;"
+    src="assets/Media/video1.mp4">
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mD7t9Tq4_Lw?si=8GJtL72dE60BWA1_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <div class="menu-icon">
+        <span></span>
+        <span></span>
+    </div>
+      
+</body>
+</html>

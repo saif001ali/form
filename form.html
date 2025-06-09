@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio type Fieldset Form</title> 
+    <link rel="stylesheet" href="formstyle.css">
+    <!--Form using radio and <fieldset> tags AND Symantic HTML Structure-->
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Customer Identity Form</h1>
+    </header>
+    
+    <main>
+        <form action="" >
+            <label for="customerName">Name: 
+                <input type="text" name="name" id="customerName" placeholder="Your name">
+                <!--The for attribute of <label> must be equal to the id attribute of the related element to bind them together. A label can also be bound to an element by placing the element inside the <label> element. -->
+            </label>
+            <label for="cutomerAge">Age: 
+                <input type="text" name="age" id="cutomerAge" placeholder="Your age">
+                <!--The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+
+                Note: Only form elements with a "name" attribute will have their values passed when submitting a form. -->
+            </label>
+            <label for="gender">Gender: 
+                <input type="radio" name="gender" id="maleGender">Male
+                <input type="radio" name="gender" id="femaleGender">Female
+                <!--Inside <input> radio type, name="value"(name value) has to be same for every option. otherwise there will be multiple value like CHECKBOX-->
+            </label>
+            <fieldset>
+                <legend> <h3>Qurbani Animal</h3> </legend>
+                <input type="checkbox" name="animal" id="goat">Goat <br>
+                <input type="checkbox" name="animal" id="sheep">Sheep <br>
+                <input type="checkbox" name="animal" id="dumba">Dumba <br>
+                <input type="checkbox" name="animal" id="cow">Cow <br>
+                <input type="checkbox" name="animal" id="camel">Camel
+                <!--The value attribute is used differently for different input types:
+
+                For "button", "reset", and "submit" - it defines the text on the button
+                For "text", "password", and "hidden" - it defines the initial (default) value of the input field
+                For "checkbox", "radio", "image" - it defines the value associated with the input (this is also the value that is sent on submit) -->
+            </fieldset>
+            <fieldset>
+                <legend>Special Instruction</legend>
+                <textarea name="" id="textArea" cols="50" rows="10"></textarea>
+            </fieldset>
+            <input style="padding: 9px;" type="reset" value="Reset">
+            <input  style="padding: 9px;" type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

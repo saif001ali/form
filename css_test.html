@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS test</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .para{
+            color: brown;
+        }
+        h2, h3{
+            background-color: rgb(81, 50, 3);
+            border: 1px solid white;
+        }
+        .emphasis{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .line_through, .extra{ /*you can add multiple class*/
+            text-decoration: line-through;
+        }
+        li{
+            background-color: rgba(226, 196, 24, 0.339);
+        }
+        .back_para{
+            background-color: yellow;
+        }
+        input[type="text"]{
+            border: 3px dashed;
+        }
+        input[type="password"]{
+            color: brown;
+            border: 20px solid palevioletred;
+            margin: 2px;
+            /* padding: 50px; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Css</h1>
+    <h2>Need to learn CSS asap</h2>
+    <h3>Need to use comments more</h3>
+    <p>Lorem ipsum, dolor sit map cons sing elite. Ullam labore nobis veritatis <span class="emphasis">delectus maiores</span>. Quo saepe facere reprehenderit accusantium, optio iste vitae alias beatae in tempore blanditiis, nam consectetur delectus.</p>
+    <p class="para">Paragraph Body 1</p>
+    <p class="para line_through">Paragraph Body 2</p> <!--you can add multiple classes to make multiple effects-->
+    <div class="back_para">
+        <p class="para">Paragraph Body 3</p>
+        <p class="para">Paragraph Body 4</p>
+        <p class="para">Paragraph Body 5</p>
+        <p class="para">Paragraph Body 6</p>
+    </div>
+    <ol>
+        <li>Class Selector</li>
+        <li class="line_through">ID Selector</li>
+        <li>Element Selector</li>
+        <li class="extra">Universal Selector</li>
+        <li>Group Selector</li>
+        <li>Attribute Selector</li>
+    </ol>
+    <form action="">
+        <input type="text">
+        <br>
+        <input type="password">
+        <br>
+        <input type="button" value="submit">
+    </form>
+    
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Consistent Spacing with rem Units</title>
+    <style>
+        html {
+            font-size: 16px;
+            /* Base font size */
+        }
+
+        .container {
+            width: 80%;
+            /* Set container width */
+            margin: 1 auto;
+            /* Center the container */
+            padding: 2rem;
+            /* Consistent padding
+    around the container */
+            background-color: #f0f0f0;
+            /* Background color
+    for the container */
+        }
+
+        .item {
+            margin-bottom: 1rem;
+            /* Consistent margin between items */
+            padding: 1rem;
+            /* Consistent padding within items */
+            background-color: #3498db;
+            /* Background color for items */
+            color: #fff;
+            /* Text color for items */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+
+</html> -->

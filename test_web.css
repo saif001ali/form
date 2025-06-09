@@ -1,0 +1,18 @@
+.para1{
+    /* display: inline-block; */
+    width: auto;
+    height: 300px;
+    background-size: 100% 100%; /* 100% of width and 100% of height> full pic */
+    background-image: url('Images_Test_Web/Card1.jpg');
+    border: 1px solid black;
+    border-radius: 8px 0;  /*TL and BR 8px and TR and BL 0*/
+    margin: 2px 20px 2px 5px; /*Top2px Right20px Bottom2px Left5px accordingly*/
+}
+
+footer{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+}
